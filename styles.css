@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4285f4;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav ul li a.active {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.search-container {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+button, .button {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.button {
+    border-radius: 4px;
+}
+
+button:hover, .button:hover {
+    background-color: #3367d6;
+}
+
+#movie-info, .movie-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+#movie-info img, .movie-card img {
+    max-width: 150px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.movie-card .info {
+    margin-left: 170px;
+    min-height: 220px;
+}
+
+.movie-actions {
+    margin-top: 1rem;
+    clear: both;
+    text-align: right;
+}
+
+.add-to-watchlist, .remove-from-watchlist {
+    background-color: #4caf50;
+    margin-left: 0.5rem;
+}
+
+.remove-from-watchlist {
+    background-color: #f44336;
+}
+
+#error-message {
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+#empty-watchlist-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#empty-watchlist-message .button {
+    margin-top: 1rem;
+}
+
+.clear-watchlist {
+    display: block;
+    margin: 0 0 1.5rem auto;
+    width: auto;
+}
